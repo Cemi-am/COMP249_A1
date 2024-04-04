@@ -4,6 +4,8 @@
 // Written by: Samy Mezimez 40275766
 //------------------------------------------
 
+//Test test test
+
 package clientPackage;
 
 public class Clients {
@@ -13,6 +15,7 @@ public class Clients {
 	private String cxName;
 	private String phoneNb;
 	private String email;
+	private static String test;
 	
 	//Default constructor
 	public Clients() {
@@ -29,7 +32,7 @@ public class Clients {
 	
 	//Copy constructor
 	public Clients(Clients copyObject) {
-
+		test = "test";
 		this.cxName = copyObject.cxName;
 		this.phoneNb = copyObject.phoneNb;
 		this.email = copyObject.email;
@@ -42,6 +45,7 @@ public class Clients {
 				arrClients[i].cxID = ("C"+i);
 			}
 		}
+		test += "test";
 	}
 	
 	public void setCxID(String cxID) {
